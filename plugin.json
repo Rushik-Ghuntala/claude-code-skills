@@ -1,7 +1,7 @@
 {
   "name": "claude-code-skills",
-  "version": "1.0.0",
-  "description": "11 production-ready Claude Code skills for X/Twitter content creation, engagement optimization, and MVP market research. Includes 10 slash commands and 3 specialized agents.",
+  "version": "1.1.0",
+  "description": "12 production-ready Claude Code skills for X/Twitter content creation, engagement optimization, MVP market research, and zero-to-production scope generation. Includes 11 slash commands and 3 specialized agents.",
   "author": "Rushik Ghuntala",
   "keywords": [
     "claude-code",
@@ -12,7 +12,9 @@
     "social-media",
     "mvp",
     "market-research",
-    "growth"
+    "growth",
+    "scope-of-work",
+    "saas"
   ],
   "skills": [
     "skills/trend-discovery",
@@ -24,7 +26,8 @@
     "skills/content-calendar",
     "skills/article-generator",
     "skills/post-creator",
-    "skills/mvp-idea-generator"
+    "skills/mvp-idea-generator",
+    "skills/mvp-scope-generator"
   ],
   "commands": [
     "commands/x-trends.md",
@@ -36,7 +39,8 @@
     "commands/x-calendar.md",
     "commands/x-article.md",
     "commands/x-post.md",
-    "commands/mvp-ideas.md"
+    "commands/mvp-ideas.md",
+    "commands/mvp-scope.md"
   ],
   "agents": [
     "agents/trend-researcher.md",

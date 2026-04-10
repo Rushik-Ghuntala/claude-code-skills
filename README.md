@@ -1,13 +1,13 @@
 # Claude Code Skills
 
-**11 production-ready Claude Code skills for X/Twitter content creation, engagement optimization, and MVP market research.**
+**12 production-ready Claude Code skills for X/Twitter content creation, engagement optimization, MVP market research, and zero-to-production scope generation.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Skills](https://img.shields.io/badge/Skills-11-green)
-![Commands](https://img.shields.io/badge/Commands-10-orange)
+![Skills](https://img.shields.io/badge/Skills-12-green)
+![Commands](https://img.shields.io/badge/Commands-11-orange)
 ![Agents](https://img.shields.io/badge/Agents-3-purple)
 
-> Turn Claude Code into a content creation powerhouse and market research engine. Generate viral tweets, compose optimized threads, score engagement potential, plan content calendars, write long-form articles, and research MVP opportunities — all from your terminal.
+> Turn Claude Code into a content creation powerhouse, market research engine, and MVP build planner. Generate viral tweets, compose optimized threads, score engagement potential, plan content calendars, write long-form articles, research MVP opportunities, and generate comprehensive zero-to-production scope documents — all from your terminal.
 
 ## Quick Install
 
@@ -39,11 +39,12 @@ cd claude-code-skills
 | `/x-article [topic]` | article-generator | Write long-form X articles and technical blog posts |
 | `/x-trends [niche]` | trend-discovery | Discover trending developer topics with content angles |
 
-### Research Skills
+### Research & Planning Skills
 
 | Command | Skill | What It Does |
 |---------|-------|-------------|
 | `/mvp-ideas [count] [niche]` | mvp-idea-generator | Research 9+ platforms to find scored MVP opportunities with $10K MRR paths |
+| `/mvp-scope [input]` | mvp-scope-generator | Generate zero-to-production scope: DB schemas, API specs, tech stack, landing page, SEO, marketing, launch plan |
 
 ### Agents
 
@@ -93,6 +94,33 @@ Top 3 Ideas:
 Each idea includes: pain points with sources, target persona,
 MVP features, pricing, competitors, growth strategy,
 and month-by-month path to $10K MRR.
+```
+
+### `/mvp-scope ~/reports/mvp-2026-04-10.md`
+
+```
+Zero-to-Production Scope of Work
+
+Product: PingBase — API Endpoint Monitor for Indie Devs
+Build time: 5 weeks (solo developer)
+Month 1 cost: ~$1/mo (free tiers)
+Overall confidence: HIGH (4.2/5.0)
+
+11 Sections:
+1. Database Architecture [HIGH] — 11 tables, complete SQL schemas, ASCII ERD
+2. Feature & API Design [HIGH] — 4 features, 20+ endpoints, RBAC matrix
+3. Tech Stack [HIGH] — Next.js + Neon + Clerk + Stripe (scored 18-24/25)
+4. Landing Page [HIGH] — Hero copy, pricing cards, FAQ, waitlist page
+5. SEO Strategy [MEDIUM] — 20+ target keywords, 10 blog titles
+6. Marketing [MEDIUM] — 4-week pre-launch plan, launch day playbook
+7. Deployment [HIGH] — Vercel + Neon, GitHub Actions CI/CD
+8. Testing [HIGH] — Vitest + Playwright, 15-item checklist
+9. Timeline [HIGH] — 5-week Gantt with 7 milestones
+10. Costs [HIGH] — $1/mo launch, $71/mo at scale, break-even at 1 user
+11. Post-Launch [MEDIUM] — Scaling triggers, path to $10K MRR
+
+[Each section fully specified — real SQL, real API schemas,
+ real pricing, real copy. Zero TBD placeholders.]
 ```
 
 ### `/x-thread "Why TypeScript won"`
@@ -255,8 +283,8 @@ export X_ACCESS_SECRET="your-access-secret"
 
 ```
 claude-code-skills/
-├── skills/              # 11 skill directories (each with SKILL.md + references)
-├── commands/            # 10 slash command definitions
+├── skills/              # 12 skill directories (each with SKILL.md + references)
+├── commands/            # 11 slash command definitions
 ├── agents/              # 3 agent definitions
 ├── lib/                 # Shared Python utilities
 ├── docs/                # Extended documentation
@@ -276,7 +304,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 - GitHub README generator
 - Newsletter content creator
 - YouTube title/description optimizer
-- Product launch playbook generator
 
 ## License
 
