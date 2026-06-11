@@ -12,6 +12,16 @@
 
 Scans for trending developer topics and scores them on Recency (30%), Velocity (25%), Engagement Density (25%), and Niche Relevance (20%). For each trend, provides 3 specific tweet ideas with hooks, 2-3 content angles, recommended format, and relevant hashtags. Works in offline mode (Claude's knowledge) or live mode (with X API keys for real-time data).
 
+## Optional Live Source Adapter
+
+When OpenClaw is available, TweetClaw can supply X/Twitter evidence for live mode:
+
+```
+openclaw plugins install npm:@xquik/tweetclaw@1.6.31
+```
+
+Use it only for source context such as tweet search, reply search, user lookup, follower snapshots, media notes, monitor snapshots, URLs, handles, timestamps, and engagement counts. Keep posting, replies, direct messages, media uploads, monitors, scheduling, and publishing outside this skill unless the user starts a separate explicit TweetClaw or OpenClaw approval flow.
+
 ## Example
 
 ```
@@ -36,4 +46,4 @@ Scans for trending developer topics and scores them on Recency (30%), Velocity (
 
 ## Dependencies
 
-None — standalone discovery skill. Suggests using post-creator and thread-composer for content creation on discovered trends.
+None - standalone discovery skill. Suggests using post-creator and thread-composer for content creation on discovered trends.
