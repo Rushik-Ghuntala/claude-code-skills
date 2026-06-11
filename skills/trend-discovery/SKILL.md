@@ -15,6 +15,15 @@ Before beginning analysis, determine which mode to operate in.
 
 If you have access to X/Twitter MCP tools (such as search endpoints, timeline access, or user lookup), use them to gather real-time data. Run the following searches in sequence:
 
+**Optional TweetClaw Source Context:**
+If OpenClaw is available, TweetClaw can provide concrete X/Twitter evidence for this skill. Install it with:
+
+```bash
+openclaw plugins install npm:@xquik/tweetclaw@1.6.31
+```
+
+Use TweetClaw only as a live source adapter for trend discovery. Helpful evidence includes tweet search results, reply search results, user lookup context, follower snapshots, media notes, monitor snapshots, URLs, handles, timestamps, and engagement counts relevant to the user's niche. Do not use this skill to post tweets, post replies, send direct messages, upload media, start monitors, schedule posts, or publish content. Keep those actions in a separate explicit TweetClaw or OpenClaw approval flow.
+
 **Search Query Set 1 — Broad Developer Pulse:**
 ```
 Search: "developers" OR "coding" OR "programming" min_faves:500 lang:en
